@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.rgAwGY9vUVw-X_udSnD8tQHaHa&pid=Api&P=0&h=180" alt="logo" height="85px" width="7.5%">
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Your Fitness Journey Starts Here</h2>
+                <p>Join us and achieve your fitness goals with our top-notch facilities and trainers.</p>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="https://wallsdesk.com/wp-content/uploads/2016/10/Gym-full-HD.jpg" style="width:50%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.SLijw5ngatESep5O4P9zxgHaEK&pid=Api&P=0&h=180" style="width:50%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://aperformance.co.uk/wp-content/uploads/2020/11/Elite-Gym-Flooring.jpg" style="width:50%">
+                    </div>
+                    <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                <a href="#contact" class="cta">Get Started</a>
+            </div>
+        </section>
+        <section id="about" class="info">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Step into our gym and discover a fitness haven equipped with the latest machines, free weights, and functional training areas. Our clean and modern facilities include spacious locker rooms, a sauna, and a juice bar for post-workout refreshments. Enjoy the convenience of ample parking and flexible membership options. We're committed to providing a comfortable and welcoming space where you can focus on your fitness goals.</p>
+            </div>
+        </section>
+        <section id="services" class="info">
+            <div class="container">
+                <h2>Our Services</h2>
+                <p>We offer a range of services including personal training, group classes, and state-of-the-art equipment.</p>
+           
+                <section id="pricing" class="info">
+                    <div class="container">
+                        <h2>Membership Plans</h2>
+                        <div class="pricing-container">
+                            <div class="pricing-card">
+                                <h3>Basic Plan</h3>
+                                <p class="price">$19.99/month</p>
+                                <ul>
+                                    <li>Access to gym equipment</li>
+                                    <li>Free initial consultation</li>
+                                    <li>Locker room access</li>
+                                </ul>
+                                <br><br><br><br><br>
+                                <a href="#" class="cta">Sign Up</a>
+                            </div>
+                            <div class="pricing-card">
+                                <h3>Standard Plan</h3>
+                                <p class="price">$39.99/month</p>
+                                <ul>
+                                    <li>Access to gym equipment</li>
+                                    <li>Free initial consultation</li>
+                                    <li>Locker room access</li>
+                                    <li>Unlimited group classes</li>
+                                    <li>1 Personal training session per month</li>
+                                </ul>
+                                <br>
+                                <a href="#" class="cta">Sign Up</a>
+                            </div>
+                            <div class="pricing-card">
+                                <h3>Premium Plan</h3>
+                                <p class="price">$59.99/month</p>
+                                <ul>
+                                    <li>Access to gym equipment</li>
+                                    <li>Free initial consultation</li>
+                                    <li>Locker room access</li>
+                                    <li>Unlimited group classes</li>
+                                    <li>4 Personal training sessions per month</li>
+                                    <li>Access to sauna and spa facilities</li>
+                                </ul>
+                                <a href="#" class="cta">Sign Up</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </section>
+        <section id="contact" class="info">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required style="resize : none;"></textarea>
+                    </div>
+                    <button type="submit" class="cta">Submit</button>
+                </form>
+            </div>
+        </section>        
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Our Gym. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
